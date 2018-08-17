@@ -1,0 +1,33 @@
+[
+{
+    "num": "1",
+    "name": "Olivia Iacono",
+    "numDances": "1",
+    "bgColor": "green lighten-4",
+    "dances": ["Jack"]
+},
+{
+    "num": "2",
+    "name": "Victoria Iacono",
+    "numDances": "1",
+    "bgColor": "red lighten-3",
+    "dances": ["Clara"]
+},
+{
+    "num": "3",
+    "name": "Erin Boone",
+    "numDances": "0",
+    "bgColor": "",
+    "dances": []
+},
+{
+    "num": "4",
+    "name": "Valeria Perez",
+    "numDances": "0",
+    "bgColor": "",
+    "dances": []
+}
+]
+
+
+    

@@ -6,7 +6,7 @@
 
 .row {
     width: 90%;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0rem;
 }
 
 .btn-small {
@@ -15,5 +15,8 @@
 }
 
 .card {
-    margin-top: 0.6rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: none;
+    border: 0.5px solid lightgray;
 }

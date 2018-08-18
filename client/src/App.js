@@ -13,6 +13,13 @@ class App extends Component {
     }
   };
 
+  componentDidMount() {
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.collapsible');
+      var instances = window.M.Collapsible.init(elems);
+    });
+  }
+
   render() {
     return (
       <div>
@@ -23,9 +30,11 @@ class App extends Component {
               key={dancer.num}
               name={dancer.name}
               bg={dancer.bgColor}
+              dances={dancer.dances}
               />
           ))}
         </Sidebar>
+
       </div>
     );
   }

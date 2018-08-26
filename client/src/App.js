@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Sidebar from "./Components/Sidebar";
 import DancerCard from "./Components/DancerCard";
-import data from "./dancers.json"
+import DanceCard from "./Components/DanceCard";
+import dancerData from "./dancers.json"
+import danceData from "./dances.json"
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      dancers: data
+      dancers: dancerData,
+      dances: danceData
     }
   };
 
@@ -31,10 +33,26 @@ class App extends Component {
               name={dancer.name}
               bg={dancer.bgColor}
               dances={dancer.dances}
+              height={dancer.height}
+              age={dancer.age}
+              score={dancer.score}
               />
           ))}
         </Sidebar>
 
+        <div id="main-content">
+          <h4 className="center-align">Dances</h4>
+          <div className="row row-dance">
+            {this.state.dances.map(dance => (
+              <DanceCard
+                name={dance.name}
+                key={dance.name}
+                cast={dance.cast}
+              />
+            ))}
+          </div>
+          
+        </div>
       </div>
     );
   }

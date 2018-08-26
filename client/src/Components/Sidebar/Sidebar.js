@@ -3,7 +3,7 @@ import "./Sidebar.css";
 
 
 const Sidebar = (props) => (
-    <div>
+    <div id="container-sidebar">
         <ul id="slide-out" className="sidenav sidenav-fixed">
             <h4 className="center-align">Dancers</h4>
             {props.children};
